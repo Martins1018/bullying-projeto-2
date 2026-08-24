@@ -3,84 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Conecta - Apoio ao Estudante</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Portal de Apoio ao Estudante</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Portal Conecta</h1>
-    <p>Apoio, respeito e segurança no mundo digital</p>
-
     <nav>
-        <a href="index.html">Início</a>
-        <a href="escuta.html">Portal de Escuta</a>
-        <a href="quiz.html">Quiz</a>
-        <a href="referencias.html">Referências</a>
+        <h1>💙 Portal de Apoio</h1>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="escuta.html">Portal de Escuta</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="referencias.html">Referências</a></li>
+        </ul>
     </nav>
 </header>
 
+<main>
 
-<section class="hero">
+    <section class="hero">
+        <div>
+            <h2>Bullying: juntos contra o desrespeito</h2>
 
-    <img src="imagens/capa.jpg" alt="Estudantes usando tecnologia">
+            <p>
+                Bem-vindo ao Portal de Apoio ao Estudante!
+                Aqui você encontrará informações, orientações e apoio
+                para compreender e combater o bullying.
+            </p>
 
-    <div>
-        <h2>Bem-vindo ao Portal de Apoio ao Estudante</h2>
+            <a class="botao" href="escuta.html">
+                Quero conversar
+            </a>
+        </div>
+    </section>
+
+
+    <section class="conteudo">
+
+        <h2>O que é bullying?</h2>
 
         <p>
-            Este espaço foi criado para ajudar estudantes a entenderem
-            o cyberbullying, a segurança digital e a importância do respeito
-            nas redes sociais.
+            Bullying é um comportamento agressivo e repetitivo que pode
+            acontecer entre estudantes. Ele pode envolver apelidos
+            ofensivos, humilhações, ameaças, exclusão ou outras atitudes
+            que machuquem ou constranjam alguém.
         </p>
 
-        <button onclick="aumentarFonte()">Aumentar fonte</button>
-        <button onclick="modoEscuro()">Modo escuro</button>
-    </div>
+        <div class="cards">
 
-</section>
+            <article class="card">
+                <h3>👊 Agressões</h3>
+                <p>
+                    Atitudes físicas ou ameaças direcionadas a outra pessoa.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>💬 Ofensas</h3>
+                <p>
+                    Apelidos, insultos e comentários usados para humilhar.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>🚫 Exclusão</h3>
+                <p>
+                    Deixar alguém de fora propositalmente de atividades ou grupos.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>📱 Cyberbullying</h3>
+                <p>
+                    Agressões, humilhações ou ameaças realizadas por meios digitais.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
 
 
-<section class="cards">
+    <section class="apoio">
 
-<div class="card">
-<h3>💻 Segurança Digital</h3>
-<p>
-Aprenda como proteger seus dados e navegar com responsabilidade.
-</p>
-</div>
+        <h2>Você não está sozinho</h2>
 
+        <p>
+            Se você estiver passando por uma situação de bullying,
+            procure alguém de confiança. Pode ser um professor,
+            pedagogo, responsável, familiar ou outro adulto que possa
+            ajudar.
+        </p>
 
-<div class="card">
-<h3>🤝 Respeito Online</h3>
-<p>
-A internet deve ser um espaço de convivência saudável.
-</p>
-</div>
+        <a class="botao" href="quiz.html">
+            Fazer o Quiz
+        </a>
 
+    </section>
 
-<div class="card">
-<h3>❤️ Apoio</h3>
-<p>
-Você sempre pode procurar alguém de confiança para conversar.
-</p>
-</div>
-
-
-</section>
+</main>
 
 
 <footer>
-<p>© 2026 Portal Conecta - Apoio ao Estudante</p>
+    <p>Portal de Apoio ao Estudante © 2026</p>
 </footer>
 
 
-<button id="topo" onclick="voltarTopo()">↑</button>
+<button id="topo">↑</button>
 
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
-

@@ -2,84 +2,123 @@
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Escuta</title>
 
-<title>Portal de Escuta</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-
 <header>
 
-<h1>Portal de Escuta</h1>
+    <nav>
 
-<nav>
-<a href="index.html">Início</a>
-<a href="escuta.html">Escuta</a>
-<a href="quiz.html">Quiz</a>
-<a href="referencias.html">Referências</a>
-</nav>
+        <h1>💙 Portal de Apoio</h1>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="escuta.html">Portal de Escuta</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="referencias.html">Referências</a></li>
+        </ul>
+
+    </nav>
 
 </header>
 
 
+<main>
 
-<section class="container">
+<section class="pagina">
 
+    <h2>💬 Portal de Escuta</h2>
 
-<h2>Espaço para desabafo</h2>
-
-<p>
-Este formulário é apenas uma simulação. Nenhuma informação será armazenada.
-</p>
-
-
-<textarea id="texto" placeholder="Escreva aqui o que você gostaria de compartilhar..."></textarea>
+    <p>
+        Este espaço é uma simulação para você escrever como está se sentindo.
+        Nenhuma informação será armazenada.
+    </p>
 
 
-<button onclick="enviarMensagem()">
-Enviar
-</button>
+    <form id="formulario">
+
+        <label for="nome">Seu nome:</label>
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome"
+        >
 
 
-<div id="resposta"></div>
+        <label for="desabafo">Escreva seu desabafo:</label>
+
+        <textarea
+            id="desabafo"
+            rows="7"
+            placeholder="Escreva aqui o que você gostaria de compartilhar..."
+        ></textarea>
 
 
+        <button type="submit" class="botao">
+            Enviar desabafo
+        </button>
 
-<h2>Mensagens importantes</h2>
-
-
-<ul>
-
-<li>Sua voz tem importância.</li>
-
-<li>Pedir ajuda demonstra coragem.</li>
-
-<li>Converse com professores, familiares ou alguém de confiança.</li>
-
-<li>Não compartilhe conteúdos ofensivos ou privados de outras pessoas.</li>
-
-</ul>
+    </form>
 
 
+    <div id="mensagem" class="mensagem"></div>
+
+
+    <div class="frases">
+
+        <h2>💙 Lembre-se</h2>
+
+        <p>✨ Você merece ser tratado com respeito.</p>
+
+        <p>✨ Pedir ajuda não é sinal de fraqueza.</p>
+
+        <p>✨ Você não precisa enfrentar uma situação difícil sozinho.</p>
+
+        <p>✨ Falar com alguém de confiança pode ajudar.</p>
+
+    </div>
+
+
+    <div class="orientacao">
+
+        <h2>Quando procurar ajuda?</h2>
+
+        <p>
+            Se você estiver sofrendo bullying ou perceber que outra pessoa
+            está passando por isso, converse com um adulto de confiança.
+        </p>
+
+        <ul>
+            <li>Professor</li>
+            <li>Pedagogo ou orientação escolar</li>
+            <li>Direção da escola</li>
+            <li>Familiar ou responsável</li>
+            <li>Outro adulto de confiança</li>
+        </ul>
+
+    </div>
 
 </section>
 
+</main>
+
 
 <footer>
-<p>Portal Conecta</p>
+    <p>Portal de Apoio ao Estudante © 2026</p>
 </footer>
 
 
-<script src="js/script.js"></script>
+<button id="topo">↑</button>
 
+<script src="script.js"></script>
 
 </body>
 </html>
