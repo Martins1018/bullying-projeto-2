@@ -1,4 +1,3 @@
-/* Importação de fonte moderna */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
@@ -18,7 +17,6 @@ body {
   padding: 20px;
 }
 
-/* Container principal do Quiz */
 #quiz-container {
   background-color: #ffffff;
   width: 100%;
@@ -36,7 +34,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Texto da Pergunta */
 #pergunta-texto {
   font-size: 1.15rem;
   font-weight: 600;
@@ -45,7 +42,6 @@ h2 {
   line-height: 1.5;
 }
 
-/* Botões de Opção */
 #opcoes-container {
   display: flex;
   flex-direction: column;
@@ -76,7 +72,6 @@ h2 {
   transform: translateY(0);
 }
 
-/* Container e Botão de Resultado */
 #resultado-container h3 {
   font-size: 1.5rem;
   color: #2c3e50;
