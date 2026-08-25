@@ -3,32 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conscientização sobre Bullying</title>
+    <title>Conscientização e Combate ao Bullying</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Diga Não ao Bullying</h1>
-        <p>Respeito e empatia transformam o mundo.</p>
+    <header class="navbar">
+        <div class="logo">JuntosContraOBullying</div>
+        <nav>
+            <a href="index.html" class="active">Início</a>
+            <a href="quiz.html">Quiz Interativo</a>
+            <a href="escuta.html">Canal de Escuta</a>
+            <a href="referencias.html">Referências</a>
+        </nav>
     </header>
 
-    <main>
-        <section class="banner">
-            <!-- Substitua a URL da imagem por uma imagem local ou de sua preferência -->
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600" alt="Pessoas unidas em apoio">
-        </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Respeito, Empatia e Diálogo</h1>
+            <p>O bullying traz marcas profundas. Aprenda a identificar, combater e acolher quem precisa de ajuda.</p>
+            <a href="quiz.html" class="btn-main">Testar Seus Conhecimentos</a>
+        </div>
+    </section>
 
-        <section class="quiz-container">
-            <h2>Quiz de Conscientização</h2>
-            <div id="quiz">
-                <p id="pergunta">Carregando pergunta...</p>
-                <div id="opcoes"></div>
-            </div>
-            <p id="resultado"></p>
+    <main class="container">
+        <section class="cards-grid">
+            <article class="card">
+                <h3>O que é Bullying?</h3>
+                <p>É todo ato de violência física ou psicológica, intencional e repetitivo, praticado sem motivação evidente por um ou mais indivíduos contra uma vítima.</p>
+            </article>
+
+            <article class="card">
+                <h3>O Cyberbullying</h3>
+                <p>Ocorre no ambiente virtual através de redes sociais, mensagens e jogos online. Suas consequências podem ser graves devido à rápida disseminação do conteúdo.</p>
+            </article>
+
+            <article class="card">
+                <h3>Como Ajudar?</h3>
+                <p>Não seja um espectador passivo. Ofereça apoio à pessoa afetada e comunique responsáveis, professores ou autoridades de confiança.</p>
+            </article>
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; Projetado para fins educativos e de conscientização social.</p>
+    </footer>
+
 </body>
 </html>

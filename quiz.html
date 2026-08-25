@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz sobre Bullying</title>
+    <title>Quiz de Conscientização - Combate ao Bullying</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Quiz de Conscientização</h1>
+
+    <header class="navbar">
+        <div class="logo">JuntosContraOBullying</div>
         <nav>
-            <a href="index.html">Início</a> | 
-            <a href="escuta.html">Canal de Escuta</a> | 
+            <a href="index.html">Início</a>
+            <a href="quiz.html" class="active">Quiz Interativo</a>
+            <a href="escuta.html">Canal de Escuta</a>
             <a href="referencias.html">Referências</a>
         </nav>
     </header>
 
-    <main class="quiz-container">
-        <div id="quiz">
-            <h2 id="pergunta">Carregando...</h2>
-            <div id="opcoes"></div>
+    <main class="container">
+        <div class="quiz-box">
+            <h2>Quiz sobre Bullying e Cyberbullying</h2>
+            <p class="quiz-desc">Responda às questões abaixo para testar sua percepção sobre atitudes de respeito e prevenção.</p>
+            
+            <div id="quiz-body">
+                <div class="progress-bar">
+                    <div id="progress" class="progress-fill"></div>
+                </div>
+                <h3 id="pergunta-texto">Carregando pergunta...</h3>
+                <div id="opcoes-container" class="options-group"></div>
+            </div>
+
+            <div id="resultado-box" class="hidden">
+                <h3 id="resultado-titulo"></h3>
+                <p id="resultado-mensagem"></p>
+                <button onclick="reiniciarQuiz()" class="btn-main">Refazer Quiz</button>
+            </div>
         </div>
-        <p id="resultado"></p>
     </main>
+
+    <footer>
+        <p>&copy; Projetado para fins educativos e de conscientização social.</p>
+    </footer>
 
     <script src="quiz.js"></script>
 </body>
