@@ -3,127 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Apoio ao Estudante - Saúde Emocional</title>
+    <title>Conscientização sobre Bullying</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Barra de Acessibilidade -->
-    <div class="accessibility-bar">
-        <button id="btn-contrast"><i class="fa-solid fa-circle-half-stroke"></i> Contraste</button>
-        <button id="btn-font-increase"><i class="fa-solid fa-font"></i> A+</button>
-        <button id="btn-font-decrease"><i class="fa-solid fa-font"></i> A-</button>
-        <button id="btn-dark-mode"><i class="fa-solid fa-moon"></i> Modo Escuro</button>
-    </div>
-
-    <!-- Cabecalho e Menu -->
     <header>
-        <div class="logo">
-            <i class="fa-solid fa-heart-pulse"></i>
-            <span>AcolheJovem</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#portal-escuta">Portal de Escuta</a></li>
-                <li><a href="#quiz">Quiz Interativo</a></li>
-                <li><a href="#referencias">Referências</a></li>
-            </ul>
-        </nav>
+        <h1>Diga Não ao Bullying</h1>
+        <p>Respeito e empatia transformam o mundo.</p>
     </header>
 
     <main>
-        <!-- 1. Pagina Inicial -->
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h1>Portal de Apoio ao Estudante</h1>
-                <p class="welcome-msg">Bem-vindo ao Portal de Apoio ao Estudante. Aqui você encontrará informações, orientações e apoio sobre situações vivenciadas no ambiente escolar. Você não está sozinho!</p>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="Estudantes unidos conversando">
-            </div>
+        <section class="banner">
+            <!-- Substitua a URL da imagem por uma imagem local ou de sua preferência -->
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600" alt="Pessoas unidas em apoio">
         </section>
 
-        <!-- 2. Portal de Escuta -->
-        <section id="portal-escuta" class="section-container">
-            <h2><i class="fa-solid fa-comments"></i> Portal de Escuta</h2>
-            <p>Precisa desabafar sobre o seu dia ou momentos difíceis na escola? Escreva abaixo. Este espaço é inteiramente privado e simulado.</p>
-            
-            <div class="escuta-grid">
-                <form id="form-escuta" class="card">
-                    <label for="desabafo">Seu desabafo (Simulação):</label>
-                    <textarea id="desabafo" rows="5" placeholder="Sinta-se à vontade para escrever o que está sentindo..." required></textarea>
-                    <button type="submit" class="btn-submit">Enviar Desabafo</button>
-                </form>
-
-                <div id="resposta-acolhimento" class="card auto-reply hidden">
-                    <div class="quote-box">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <p id="frase-motivacional"></p>
-                    </div>
-                    <div class="orientacoes">
-                        <h3><i class="fa-solid fa-hand-holding-heart"></i> Lembre-se:</h3>
-                        <p>Sua saúde emocional importa. Se estiver passando por um momento delicado, procure a ajuda de:</p>
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Um professor ou pedagogo da escola;</li>
-                            <li><i class="fa-solid fa-check"></i> A direção escolar;</li>
-                            <li><i class="fa-solid fa-check"></i> Seus pais ou um familiar de confiança;</li>
-                            <li><i class="fa-solid fa-check"></i> Serviços gratuitos de apoio como o CVV (Ligue 188).</li>
-                        </ul>
-                    </div>
-                </div>
+        <section class="quiz-container">
+            <h2>Quiz de Conscientização</h2>
+            <div id="quiz">
+                <p id="pergunta">Carregando pergunta...</p>
+                <div id="opcoes"></div>
             </div>
-        </section>
-
-        <!-- 3. Quiz Interativo -->
-        <section id="quiz" class="section-container bg-light">
-            <h2><i class="fa-solid fa-brain"></i> Quiz Interativo: Saúde Emocional</h2>
-            <p>Teste seus conhecimentos sobre como lidar com o estresse e apoiar seus colegas.</p>
-            
-            <div class="quiz-box card">
-                <div id="quiz-body">
-                    <div id="question-container">
-                        <h3 id="question-text">Carregando pergunta...</h3>
-                        <div id="options-container" class="options-grid"></div>
-                    </div>
-                </div>
-                <div id="quiz-result" class="hidden">
-                    <h3>Quiz Concluído!</h3>
-                    <p id="score-text"></p>
-                    <button onclick="restartQuiz()" class="btn-submit">Refazer Quiz</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Referencias -->
-        <section id="referencias" class="section-container">
-            <h2><i class="fa-solid fa-book-bookmark"></i> Referências e Fontes Confiáveis</h2>
-            <p>Fontes utilizadas para a elaboração do portal:</p>
-            
-            <ul class="ref-list card">
-                <li>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener">Ministério da Saúde - Saúde Mental na Adolescência</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    <a href="https://www.unicef.org/brazil/" target="_blank" rel="noopener">UNICEF Brasil - Guias de Bem-Estar e Saúde Mental</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    <a href="https://www.cvv.org.br/" target="_blank" rel="noopener">Centro de Valorização da Vida (CVV) - Ligue 188</a>
-                </li>
-            </ul>
+            <p id="resultado"></p>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; Portal de Apoio ao Estudante - Projeto Escolar Informativo.</p>
-    </footer>
-
-    <!-- Botao Voltar ao Topo -->
-    <button id="btn-back-to-top" title="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
