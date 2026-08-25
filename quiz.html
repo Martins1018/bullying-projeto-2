@@ -1,202 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz sobre Bullying</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
-
-
 <body>
+    <header>
+        <h1>Quiz de Conscientização</h1>
+        <nav>
+            <a href="index.html">Início</a> | 
+            <a href="escuta.html">Canal de Escuta</a> | 
+            <a href="referencias.html">Referências</a>
+        </nav>
+    </header>
 
-<header>
-
-    <nav>
-
-        <h1>💙 Portal de Apoio</h1>
-
-        <ul>
-
-            <li><a href="index.html">Início</a></li>
-
-            <li><a href="escuta.html">Portal de Escuta</a></li>
-
-            <li><a href="quiz.html">Quiz</a></li>
-
-            <li><a href="referencias.html">Referências</a></li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-
-<main>
-
-<section class="pagina">
-
-    <h2>🧠 Quiz sobre Bullying</h2>
-
-    <p>
-        Teste seus conhecimentos respondendo às 5 perguntas.
-    </p>
-
-
-    <form id="quiz">
-
-
-        <div class="pergunta">
-
-            <h3>1. O que caracteriza o bullying?</h3>
-
-            <label>
-                <input type="radio" name="q1" value="0">
-                Uma brincadeira entre amigos.
-            </label>
-
-            <label>
-                <input type="radio" name="q1" value="1">
-                Comportamento agressivo e repetitivo contra alguém.
-            </label>
-
-            <label>
-                <input type="radio" name="q1" value="0">
-                Uma discussão ocasional.
-            </label>
-
+    <main class="quiz-container">
+        <div id="quiz">
+            <h2 id="pergunta">Carregando...</h2>
+            <div id="opcoes"></div>
         </div>
+        <p id="resultado"></p>
+    </main>
 
-
-        <div class="pergunta">
-
-            <h3>2. Qual atitude demonstra respeito?</h3>
-
-            <label>
-                <input type="radio" name="q2" value="1">
-                Respeitar as diferenças.
-            </label>
-
-            <label>
-                <input type="radio" name="q2" value="0">
-                Colocar apelidos ofensivos.
-            </label>
-
-            <label>
-                <input type="radio" name="q2" value="0">
-                Excluir alguém do grupo.
-            </label>
-
-        </div>
-
-
-        <div class="pergunta">
-
-            <h3>3. O que fazer ao perceber uma situação de bullying?</h3>
-
-            <label>
-                <input type="radio" name="q3" value="0">
-                Ignorar sempre.
-            </label>
-
-            <label>
-                <input type="radio" name="q3" value="1">
-                Procurar um adulto de confiança.
-            </label>
-
-            <label>
-                <input type="radio" name="q3" value="0">
-                Participar da situação.
-            </label>
-
-        </div>
-
-
-        <div class="pergunta">
-
-            <h3>4. O cyberbullying acontece principalmente:</h3>
-
-            <label>
-                <input type="radio" name="q4" value="0">
-                Apenas dentro da escola.
-            </label>
-
-            <label>
-                <input type="radio" name="q4" value="1">
-                Por meio de ambientes digitais.
-            </label>
-
-            <label>
-                <input type="radio" name="q4" value="0">
-                Somente em atividades esportivas.
-            </label>
-
-        </div>
-
-
-        <div class="pergunta">
-
-            <h3>5. Se um colega estiver sofrendo bullying, você deve:</h3>
-
-            <label>
-                <input type="radio" name="q5" value="0">
-                Rir da situação.
-            </label>
-
-            <label>
-                <input type="radio" name="q5" value="0">
-                Compartilhar vídeos ou mensagens.
-            </label>
-
-            <label>
-                <input type="radio" name="q5" value="1">
-                Apoiar o colega e procurar ajuda de um adulto.
-            </label>
-
-        </div>
-
-
-        <button
-            type="button"
-            class="botao"
-            onclick="corrigirQuiz()">
-
-            Ver resultado
-
-        </button>
-
-    </form>
-
-
-    <div id="resultado" class="resultado"></div>
-
-</section>
-
-</main>
-
-
-<footer>
-
-    <p>
-        Portal de Apoio ao Estudante © 2026
-    </p>
-
-</footer>
-
-
-<button id="topo">↑</button>
-
-
-<script src="script.js"></script>
-
+    <script src="quiz.js"></script>
 </body>
-
 </html>
